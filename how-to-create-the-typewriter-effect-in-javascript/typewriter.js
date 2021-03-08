@@ -1,12 +1,11 @@
 const typeText = async (id, text) => {
     let typedText = ''
     let delay = 75
-    while (text.length !== typedText.length) {
+    while (text.length >= typedText.length) {
         $(id).text(typedText)
         await new Promise(res => setTimeout(res, delay))
         typedText += text[typedText.length]
     }
-    $(id).text(typedText)
 }
 
 const untypeText = async (id, text) => {
@@ -17,7 +16,6 @@ const untypeText = async (id, text) => {
         await new Promise(res => setTimeout(res, delay))
         typedText = typedText.substring(0, typedText.length - 1)
     }
-    $(id).text(typedText)
 }
 
 $(document).ready(async () => {
