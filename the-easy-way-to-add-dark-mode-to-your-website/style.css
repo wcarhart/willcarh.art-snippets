@@ -1,0 +1,32 @@
+:root {
+	--background: #ecf0f1;
+	--detail: #bdc3c7;
+	--color: #e67e22;
+	--text: #252323;
+}
+
+:root.dark-mode {
+	--background: #292929;
+	--detail: #34495e;
+	--color: #6642ac;
+	--text: #ecf0f1;
+}
+
+body {
+	color: var(--text);
+	background-color: var(--background);
+}
+
+.color-text {
+	color: var(--color);
+}
+
+#dark-mode-toggle {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+#dark-mode-toggle:hover {
+  cursor: pointer;
+}
