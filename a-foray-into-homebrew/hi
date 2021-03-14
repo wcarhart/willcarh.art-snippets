@@ -1,0 +1,4 @@
+#!/bin/bash
+for name in "$@" ; do
+    echo "Hi, $name"
+done
