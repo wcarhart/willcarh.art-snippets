@@ -65,7 +65,7 @@ const createDroplet = async () => {
     console.log(`IP address: ${droplet.ip}`)
 }
 
-// wait for new snug server to become active
+// wait for the droplet to become active
 const waitForDroplet = async (id) => {
     let done = false
     let token = '<YOUR API TOKEN>'
