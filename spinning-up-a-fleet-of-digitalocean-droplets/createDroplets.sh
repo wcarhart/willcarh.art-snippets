@@ -6,12 +6,12 @@ function create {
     for index in $(seq 1 ${1:-10}) ; do
         echo "Creating droplet-${index}"
         continue
-        doctl compute droplet create "dropet-${index}" \
+        doctl compute droplet create "droplet-${index}" \
             --size s-1vcpu-1gb --image ubuntu-18-04-x64 \
             --region sfo2 \
             --format ID \
             --no-header \
-            --ssh-keys $fingerprint
+            --ssh-keys "$fingerprint"
     done
     wait
 }
