@@ -1,0 +1,11 @@
+{
+  "name": "createDroplet",
+  "version": "1.0.0",
+  "main": "createDroplet.js",
+  "repository": "git@github.com:wcarhart/willcarh.art-snippets.git",
+  "author": "Will Carhart <carhartwill@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
